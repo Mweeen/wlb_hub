@@ -1,0 +1,43 @@
+/* Reset default styles that might interfere with Tailwind */
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+}
+
+/* Utility class for line clamping text */
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure navbar stays on top */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
